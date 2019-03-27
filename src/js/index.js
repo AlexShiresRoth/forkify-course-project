@@ -2,6 +2,7 @@
 import Search from './models/Search';
 import * as SearchView from './views/SearchView';
 import { elements, renderLoader, clearLoader } from './views/base';
+import Recipe from './models/Recipe';
 //global state obj
 //search object 
 //current recipe obj
@@ -49,7 +50,10 @@ elements.searchResPages.addEventListener('click', e => {
     }
 })
 
-
+//Recipe Controller///////////////////////////////////////////////////////////////////////////////////////////////////////
+const r = new Recipe(35382);
+r.getRecipe();
+console.log(r)
 
 
 
